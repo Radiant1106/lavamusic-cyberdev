@@ -1,0 +1,26 @@
+{
+   "token": "",
+   "prefix": "?",
+   "ownerIDS": [
+      "552060563602276362"
+   ],
+   "status": {
+      "text": "{prefix}help | played {songsplayed} Songs on {guildcount} Guilds | Support: discord.cyberneticsdev.tk",
+      "text2": "By: cyberneticsdev.tk",
+      "type": "PLAYING",
+      "url": "https://twitch.tv/#"
+   },
+   "clientsettings": {
+      "nodes": [
+         {
+            "host": "localhost",
+            "port": 2111,
+            "password": "dsc.gg/cyberdev"
+         }
+      ]
+   },
+   "spotify": {
+      "clientID": "",
+      "clientSecret": ""
+   }
+}
