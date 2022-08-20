@@ -233,7 +233,7 @@ module.exports = {
                 es = client.settings.get(message.guild.id, "embed")
                 return message.reply({
                   embeds: [new Discord.MessageEmbed()
-                    .setTitle(`<a:yes:833101995723194437> The new Embed Footer Text is:`.substr(0, 256))
+                    .setTitle(`<a:tick:927612765382782987> The new Embed Footer Text is:`.substr(0, 256))
                     .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
                     .setDescription(es.footertext)
                     .setFooter(client.getFooter(es))
@@ -286,7 +286,7 @@ module.exports = {
           }
         }
       } else button.reply({
-        content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`,
+        content: `<:denied:976057873878630400> You are not allowed to do that! Only: <@${cmduser.id}>`,
         ephemeral: true
       });
     });
@@ -295,7 +295,7 @@ module.exports = {
       tempmsg.edit({
         embeds: [tempmsg.embeds[0].setDescription(`~~${tempmsg.embeds[0].description}~~`)],
         components: [],
-        content: `${collected && collected.first() && collected.first().customId ? `<a:yes:833101995723194437> **Selected the \`${collected.first().customId}\`. Button**` : "❌ **NOTHING SELECTED - CANCELLED**" }`
+        content: `${collected && collected.first() && collected.first().customId ? `<a:tick:927612765382782987> **Selected the \`${collected.first().customId}\`. Button**` : "❌ **NOTHING SELECTED - CANCELLED**" }`
       })
     });
   },

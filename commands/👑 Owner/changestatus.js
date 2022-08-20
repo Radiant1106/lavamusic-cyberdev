@@ -105,11 +105,11 @@ module.exports = {
             menu?.deferUpdate();
             handle_the_picks(menu?.values[0])
           }
-          else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+          else menu?.reply({content: `<:denied:976057873878630400> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
         });
         //Once the Collections ended edit the menu message
         collector.on('end', collected => {
-          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:yes:833101995723194437> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+          menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:927612765382782987> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
         });
       }
 
@@ -349,11 +349,11 @@ module.exports = {
                         ]})
                       });
                     }
-                    else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+                    else menu?.reply({content: `<:denied:976057873878630400> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
                   });
                   //Once the Collections ended edit the menu message
                   collector.on('end', collected => {
-                    menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:yes:833101995723194437> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+                    menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:927612765382782987> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
                   });
                 }
             }
@@ -487,11 +487,11 @@ module.exports = {
                         .setTitle(eval(client.la[ls]["cmds"]["owner"]["changestatus"]["variable20"]))
                       ]})
                     }
-                    else menu?.reply({content: `<a:no:997458422821818449> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
+                    else menu?.reply({content: `<:denied:976057873878630400> You are not allowed to do that! Only: <@${cmduser.id}>`, ephemeral: true});
                   });
                   //Once the Collections ended edit the menu message
                   collector.on('end', collected => {
-                    menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:yes:833101995723194437> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
+                    menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:tick:927612765382782987> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
                   });
                 }
             }

@@ -58,7 +58,7 @@ module.exports = client => {
     //now its time to start the music system
     if (!member.voice.channel)
       return interaction.reply({
-        content: `<a:no:997458422821818449> **Please join a Voice Channel first!**`,
+        content: `<:denied:976057873878630400> **Please join a Voice Channel first!**`,
         ephemeral: true
       })
 
@@ -66,13 +66,13 @@ module.exports = client => {
     //if not connected to the same voice channel, then make sure to connect to it!
     if (player && member.voice.channel.id !== player.voiceChannel)
       return interaction.reply({
-        content: `<a:no:997458422821818449> **Please join __my__ Voice Channel first! <#${player.voiceChannel}>**`,
+        content: `<:denied:976057873878630400> **Please join __my__ Voice Channel first! <#${player.voiceChannel}>**`,
         ephemeral: true
       })
     if (interaction.isButton()) {
       if (!player || !player.queue || !player.queue.current) {
         return interaction.reply({
-          content: "<a:no:997458422821818449> Nothing Playing yet",
+          content: "<:denied:976057873878630400> Nothing Playing yet",
           ephemeral: true
         })
       }
@@ -82,7 +82,7 @@ module.exports = client => {
           embeds: [new MessageEmbed()
             .setColor(es.wrongcolor)
             .setFooter(client.getFooter(es))
-            .setTitle(`<a:no:997458422821818449> **You are not a DJ and not the Song Requester!**`)
+            .setTitle(`<:denied:976057873878630400> **You are not a DJ and not the Song Requester!**`)
             .setDescription(`**DJ-ROLES:**\n${check_if_dj(client, interaction.member, player.queue.current)}`)
           ],
           ephemeral: true
@@ -201,7 +201,7 @@ module.exports = client => {
           embeds: [new MessageEmbed()
             .setColor(es.color)
             .setTimestamp()
-            .setTitle(`${player.get(`autoplay`) ? `<a:yes:833101995723194437> **Enabled Autoplay**`: `<a:no:997458422821818449> **Disabled Autoplay**`}`)
+            .setTitle(`${player.get(`autoplay`) ? `<a:tick:927612765382782987> **Enabled Autoplay**`: `<:denied:976057873878630400> **Disabled Autoplay**`}`)
             .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             })))
@@ -248,7 +248,7 @@ module.exports = client => {
           embeds: [new MessageEmbed()
             .setColor(es.color)
             .setTimestamp()
-            .setTitle(`${player.trackRepeat ? `<a:yes:833101995723194437> **Enabled Song Loop**`: `<a:no:997458422821818449> **Disabled Song Loop**`}`)
+            .setTitle(`${player.trackRepeat ? `<a:tick:927612765382782987> **Enabled Song Loop**`: `<:denied:976057873878630400> **Disabled Song Loop**`}`)
             .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             })))
@@ -272,7 +272,7 @@ module.exports = client => {
           embeds: [new MessageEmbed()
             .setColor(es.color)
             .setTimestamp()
-            .setTitle(`${player.queueRepeat ? `<a:yes:833101995723194437> **Enabled Queue Loop**`: `<a:no:997458422821818449> **Disabled Queue Loop**`}`)
+            .setTitle(`${player.queueRepeat ? `<a:tick:927612765382782987> **Enabled Queue Loop**`: `<:denied:976057873878630400> **Disabled Queue Loop**`}`)
             .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             })))
@@ -432,13 +432,13 @@ module.exports = client => {
       const [, matchedPrefix] = message.content.match(prefixRegex); //now define the right prefix either ping or not ping
       args = message.content.slice(matchedPrefix.length).trim().split(/ +/); //create the arguments with sliceing of of the rightprefix length
       cmd = args.shift().toLowerCase(); //creating the cmd argument by shifting the args by 1
-      if (cmd || cmd.length === 0) return // message.reply("<a:no:997458422821818449> **Please use a Command Somewhere else!**").then(msg=>{setTimeout(()=>{try{msg.delete().catch(() => {});}catch(e){ }}, 3000)})
+      if (cmd || cmd.length === 0) return // message.reply("<:denied:976057873878630400> **Please use a Command Somewhere else!**").then(msg=>{setTimeout(()=>{try{msg.delete().catch(() => {});}catch(e){ }}, 3000)})
 
       var command = client.commands.get(cmd); //get the command from the collection
       if (!command) command = client.commands.get(client.aliases.get(cmd)); //if the command does not exist, try to get it by his alias
       if (command) //if the command is now valid
       {
-        return // message.reply("<a:no:997458422821818449> **Please use a Command Somewhere else!**").then(msg=>{setTimeout(()=>{try{msg.delete().catch(() => {});}catch(e){ }}, 3000)})
+        return // message.reply("<:denied:976057873878630400> **Please use a Command Somewhere else!**").then(msg=>{setTimeout(()=>{try{msg.delete().catch(() => {});}catch(e){ }}, 3000)})
       }
     }
     //getting the Voice Channel Data of the Message Member
@@ -446,7 +446,7 @@ module.exports = client => {
       channel
     } = message.member.voice;
     //if not in a Voice Channel return!
-    if (!channel) return message.reply("<a:no:997458422821818449> **Please join a Voice Channel first!**").then(msg => {
+    if (!channel) return message.reply("<:denied:976057873878630400> **Please join a Voice Channel first!**").then(msg => {
       setTimeout(() => {
         try {
           msg.delete().catch(() => {});
@@ -456,7 +456,7 @@ module.exports = client => {
     //get the lavalink erela.js player information
     const player = client.manager.players.get(message.guild.id);
     //if there is a player and the user is not in the same channel as the Bot return information message
-    if (player && channel.id !== player.voiceChannel) return message.reply(`<a:no:997458422821818449> **Please join __my__ Voice Channel first! <#${player.voiceChannel}>**`).then(msg => {
+    if (player && channel.id !== player.voiceChannel) return message.reply(`<:denied:976057873878630400> **Please join __my__ Voice Channel first! <#${player.voiceChannel}>**`).then(msg => {
       setTimeout(() => {
         try {
           msg.delete().catch(() => {});
@@ -499,7 +499,7 @@ function generateQueueEmbed(client, guildId, leave) {
       size: 4096
     }) : "https://cdn.discordapp.com/attachments/952581672979820565/992019602274009228/CyberDevLandscape.png")
     .setTitle(`Start Listening to Music, by connecting to a Voice Channel and sending either the **SONG LINK** or **SONG NAME** in this Channel!`)
-    .setDescription(`> *I support <:youtube:997460775742488708> Youtube, <:Spotify:997461107197362226> Spotify, <:soundcloud:999383321106722826> Soundcloud and direct MP3 Links!*`)
+    .setDescription(`> *I support <a:YT:938843725411520612> Youtube, <:Spotify:1010577055877963867> Spotify, <:soundcloud:1010576745717567518> Soundcloud and direct MP3 Links!*`)
   ]
   const player = client.manager.players.get(guild.id);
   if (!leave && player && player.queue && player.queue.current) {

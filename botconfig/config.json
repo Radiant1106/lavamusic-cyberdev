@@ -1,5 +1,5 @@
 {
-   "token": "GET IT FROM https://discord.com/developers",
+   "token": "OTU0NDAzMDg4ODA5MTk3NjI4.GywB8J.sFxmcxqPowXzXz_a8lxaXxIAPeQXad_fy8QWJU",
    "prefix": "?",
    "ownerIDS": [
       "552060563602276362"
@@ -13,9 +13,9 @@
    "clientsettings": {
       "nodes": [
          {
-            "host": "localhost",
-            "port": 2111,
-            "password": "dsc.gg/cyberdev"
+            "host": "n1.lavalink.milrato.com",
+            "port": 10250,
+            "password": "discord.gg/milrato"
          }
       ]
    },

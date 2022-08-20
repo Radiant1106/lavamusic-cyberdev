@@ -1,6 +1,6 @@
 {
   "msg": {
-    "COMMENT": "IF YOU DECIDE TO USE CUSTOM EMOJIS, USE THE NAME AND THE ID IN MSG, EXAMPLE: ⬜ --> <:youtube:997460775742488708>",
+    "COMMENT": "IF YOU DECIDE TO USE CUSTOM EMOJIS, USE THE NAME AND THE ID IN MSG, EXAMPLE: ⬜ --> <a:YT:938843725411520612>",
     "ERROR" : "❌",
     "SUCCESS" : "✅",
     "disabled" : "❌",
@@ -55,9 +55,9 @@
     "shuffle": "🔀",
     "show_queue": "📑",
     "show_current_track": "🩸",
-    "youtube": "<:youtube:997460775742488708>",
-    "soundcloud": "<:soundcloud:999383321106722826>",
-    "spotify": "<:Spotify:997461107197362226>",
+    "youtube": "<a:YT:938843725411520612>",
+    "soundcloud": "<:soundcloud:1010576745717567518>",
+    "spotify": "<:Spotify:1010577055877963867>",
     "apple": "🍏"
   },
   "react": {
@@ -90,9 +90,9 @@
     "show_current_track": "🩸",
     "queue_clear": "💥",
 
-    "youtube": "840260133686870036",
-    "soundcloud": "840260133686870036",
-    "spotify": "846090652231663647"
+    "youtube": "938843725411520612",
+    "soundcloud": "1010576745717567518",
+    "spotify": "1010577055877963867"
   }
 
 }

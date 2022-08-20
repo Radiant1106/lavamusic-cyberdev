@@ -105,7 +105,7 @@ module.exports = {
         //return susccess message
         return message.reply({
           embeds: [new MessageEmbed()
-            .setTitle(`<a:yes:833101995723194437> Added ${track.title} onto the Queue \`${Name}\``.substr(0, 256))
+            .setTitle(`<a:tick:927612765382782987> Added ${track.title} onto the Queue \`${Name}\``.substr(0, 256))
             .setDescription(eval(client.la[ls]["cmds"]["customqueues"]["savedqueue"]["variable19"]))
             .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
             .setFooter(client.getFooter(es))
@@ -255,7 +255,7 @@ module.exports = {
       //return susccess message
       return message.reply({
         embeds: [new MessageEmbed()
-          .setTitle(`<a:yes:833101995723194437> Deleted ${deletetrack.title} of the Queue \`${Name}\``.substr(0, 256))
+          .setTitle(`<a:tick:927612765382782987> Deleted ${deletetrack.title} of the Queue \`${Name}\``.substr(0, 256))
           .setDescription(eval(client.la[ls]["cmds"]["customqueues"]["savedqueue"]["variable40"]))
           .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
           .setFooter(client.getFooter(es))
@@ -309,7 +309,7 @@ module.exports = {
       //return susccess message
       return message.reply({
         embeds: [new MessageEmbed()
-          .setTitle(`<a:yes:833101995723194437> Shuffled ${newtracks.length} Tracks of the Queue \`${Name}\``.substr(0, 256))
+          .setTitle(`<a:tick:927612765382782987> Shuffled ${newtracks.length} Tracks of the Queue \`${Name}\``.substr(0, 256))
           .setDescription(eval(client.la[ls]["cmds"]["customqueues"]["savedqueue"]["variable49"]))
           .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
           .setFooter(client.getFooter(es))
@@ -378,7 +378,7 @@ module.exports = {
       //return susccess message
       return message.reply({
         embeds: [new MessageEmbed()
-          .setTitle(`<a:yes:833101995723194437> Removed ${counter} Tracks from the Queue \`${Name}\``.substr(0, 256))
+          .setTitle(`<a:tick:927612765382782987> Removed ${counter} Tracks from the Queue \`${Name}\``.substr(0, 256))
           .setDescription(eval(client.la[ls]["cmds"]["customqueues"]["savedqueue"]["variable58"]))
           .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
           .setFooter(client.getFooter(es))

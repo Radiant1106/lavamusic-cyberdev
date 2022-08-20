@@ -28,7 +28,7 @@ module.exports = {
 
     try {    
       if(user) {
-        if(!user.bot) return interaction.reply({ephemeral: true, content: "<a:no:997458422821818449> You can't Invite a Normal user! **IT MUST BE A BOT**"})
+        if(!user.bot) return interaction.reply({ephemeral: true, content: "<:denied:976057873878630400> You can't Invite a Normal user! **IT MUST BE A BOT**"})
         let button_public_invite = new MessageButton().setStyle('LINK').setLabel(handlemsg(client.la[ls].cmds.info.invite.buttons.public)).setURL("https://discord.com/api/oauth2/authorize?client_id=954403088809197628&permissions=8&scope=bot%20applications.commands")
         let button_support_dc = new MessageButton().setStyle('LINK').setLabel(handlemsg(client.la[ls].cmds.info.invite.buttons.server)).setURL("https://discord.cyberneticsdev.tk")
         let button_invite = new MessageButton().setStyle('LINK').setLabel("Invite " + user.username).setURL(`https://discord.com/api/oauth2/authorize?client_id=${user.id}&permissions=8&scope=bot%20applications.commands`)

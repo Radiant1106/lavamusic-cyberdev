@@ -148,7 +148,7 @@ module.exports = {
         .setFooter(client.getFooter("Page Overview\n" + client.user.username, client.user.displayAvatarURL()))
         .setTitle(`Information about __${client.user.username}__`)
         .addField(":muscle: **__My Features__**",
-          `>>> :notes: An advanced <:Spotify:997461107197362226> **Music System** with **Audio Filtering**
+          `>>> :notes: An advanced <:Spotify:1010577055877963867> **Music System** with **Audio Filtering**
 :video_game: A unique Music Request System and way much more!`)
         .addField(":question: **__How do you use me?__**",
           `>>> \`${prefix}setup-music #Channel\` To create the Music System, then connect to a **VC** and type your wished Song!
@@ -295,8 +295,8 @@ but you can also do \`${prefix}play <SONGNAME/SONGLINK>\` without setting it up!
         .setTitle(`[\`${client.commands.filter((cmd) => cmd.category === "🔰 Info").size}\`] 🔰 Information Commands 🔰`)
         .setDescription(`> *${client.commands.filter((cmd) => cmd.category === "🔰 Info").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}*`)
         .addField("\u200b", "__**Sub-Categorized Commands:**__")
-        .addField(`<:discord:997459827888504892> **Server Related Commands**`, ">>> " + client.commands.filter((cmd) => cmd.category === "🔰 Info" && cmd.type === "server").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
-        .addField(`<:Bot_Flag:997472583102509156> **Bot Related Commands**`, ">>> " + client.commands.filter((cmd) => cmd.category === "🔰 Info" && cmd.type === "bot").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+        .addField(`<:discord:981396783026561024> **Server Related Commands**`, ">>> " + client.commands.filter((cmd) => cmd.category === "🔰 Info" && cmd.type === "server").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+        .addField(`<:Bot_Flag:1010585748245848175> **Bot Related Commands**`, ">>> " + client.commands.filter((cmd) => cmd.category === "🔰 Info" && cmd.type === "bot").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
       embeds.push(embed0)
 
       //MUSIC COMMANDS type: song, queue, queuesong, bot
@@ -305,8 +305,8 @@ but you can also do \`${prefix}play <SONGNAME/SONGLINK>\` without setting it up!
         .setDescription(`> *${client.commands.filter((cmd) => cmd.category === "🎶 Music").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}*`)
         .addField("\u200b", "__**Sub-Categorized Commands:**__")
         .addField("📑 **Queue Commands**", "> " + client.commands.filter((cmd) => cmd.category === "🎶 Music" && cmd.type?.includes("queue")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
-        .addField("<a:Playing_Audio:997541772160942233> **Song Commands**", "> " + client.commands.filter((cmd) => cmd.category === "🎶 Music" && cmd.type?.includes("song")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
-        .addField("<:Bot_Flag:997472583102509156> **Bot Commands**", "> " + client.commands.filter((cmd) => cmd.category === "🎶 Music" && cmd.type?.includes("bot")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+        .addField("<a:Playing_Audio:1010586247128948869> **Song Commands**", "> " + client.commands.filter((cmd) => cmd.category === "🎶 Music" && cmd.type?.includes("song")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+        .addField("<:Bot_Flag:1010585748245848175> **Bot Commands**", "> " + client.commands.filter((cmd) => cmd.category === "🎶 Music" && cmd.type?.includes("bot")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
       embeds.push(embed3)
 
       //FILTER COMMANDS
@@ -320,7 +320,7 @@ but you can also do \`${prefix}play <SONGNAME/SONGLINK>\` without setting it up!
         .setTitle(`[\`${client.commands.filter((cmd) => cmd.category === "💰 Premium").size}\`] 💰 Premium`)
         .setDescription(`> *${client.commands.filter((cmd) => cmd.category === "💰 Premium").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}*`)
         .addField("\u200b", "__**Sub-Categorized Commands:**__")
-        .addField("<:Bot_Flag:997472583102509156> **Bot Related Commands**", "> " + client.commands.filter((cmd) => cmd.category === "⚙️ Settings" && cmd.type?.includes("bot")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+        .addField("<:Bot_Flag:1010585748245848175> **Bot Related Commands**", "> " + client.commands.filter((cmd) => cmd.category === "⚙️ Settings" && cmd.type?.includes("bot")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
         .addField("🎶 **Music Related Commands**", "> " + client.commands.filter((cmd) => cmd.category === "⚙️ Settings" && cmd.type?.includes("music")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
       embeds.push(embed5)
 
@@ -329,7 +329,7 @@ but you can also do \`${prefix}play <SONGNAME/SONGLINK>\` without setting it up!
         .setTitle(`[\`${client.commands.filter((cmd) => cmd.category === "⚙️ Settings").size}\`] ⚙️ Settings Commands ⚙️`)
         .setDescription(`> *${client.commands.filter((cmd) => cmd.category === "⚙️ Settings").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}*`)
         .addField("\u200b", "__**Sub-Categorized Commands:**__")
-        .addField("<:Bot_Flag:997472583102509156> **Bot Related Commands**", "> " + client.commands.filter((cmd) => cmd.category === "⚙️ Settings" && cmd.type?.includes("bot")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+        .addField("<:Bot_Flag:1010585748245848175> **Bot Related Commands**", "> " + client.commands.filter((cmd) => cmd.category === "⚙️ Settings" && cmd.type?.includes("bot")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
         .addField("🎶 **Music Related Commands**", "> " + client.commands.filter((cmd) => cmd.category === "⚙️ Settings" && cmd.type?.includes("music")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
       embeds.push(embed8)
 
@@ -338,8 +338,8 @@ but you can also do \`${prefix}play <SONGNAME/SONGLINK>\` without setting it up!
         .setTitle(`[\`${client.commands.filter((cmd) => cmd.category === "👑 Owner").size}\`] 👑 Owner Commands 👑`)
         .setDescription(`> *${client.commands.filter((cmd) => cmd.category === "👑 Owner").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}*`)
         .addField("\u200b", "__**Sub-Categorized Commands:**__")
-        .addField("<:discord:997459827888504892> **Information & Manage**", "> " + client.commands.filter((cmd) => cmd.category === "👑 Owner" && cmd.type?.includes("info")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
-        .addField("<:Bot_Flag:997472583102509156> **Adjust the Bot**", "> " + client.commands.filter((cmd) => cmd.category === "👑 Owner" && cmd.type?.includes("bot")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+        .addField("<:discord:981396783026561024> **Information & Manage**", "> " + client.commands.filter((cmd) => cmd.category === "👑 Owner" && cmd.type?.includes("info")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+        .addField("<:Bot_Flag:1010585748245848175> **Adjust the Bot**", "> " + client.commands.filter((cmd) => cmd.category === "👑 Owner" && cmd.type?.includes("bot")).sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
       embeds.push(embed9)
 
       return embeds.map((embed, index) => {

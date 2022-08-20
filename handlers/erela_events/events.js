@@ -688,7 +688,7 @@ module.exports = (client) => {
                 embeds: [new MessageEmbed()
                   .setColor(es.color)
                   .setTimestamp()
-                  .setTitle(`${player.get(`autoplay`) ? `<a:yes:833101995723194437> **Enabled Autoplay**`: `❌ **Disabled Autoplay**`}`)
+                  .setTitle(`${player.get(`autoplay`) ? `<a:tick:927612765382782987> **Enabled Autoplay**`: `❌ **Disabled Autoplay**`}`)
                   .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                     dynamic: true
                   })))
@@ -729,7 +729,7 @@ module.exports = (client) => {
                 embeds: [new MessageEmbed()
                   .setColor(es.color)
                   .setTimestamp()
-                  .setTitle(`${player.trackRepeat ? `<a:yes:833101995723194437> **Enabled Song Loop**`: `❌ **Disabled Song Loop**`}`)
+                  .setTitle(`${player.trackRepeat ? `<a:tick:927612765382782987> **Enabled Song Loop**`: `❌ **Disabled Song Loop**`}`)
                   .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                     dynamic: true
                   })))
@@ -754,7 +754,7 @@ module.exports = (client) => {
                 embeds: [new MessageEmbed()
                   .setColor(es.color)
                   .setTimestamp()
-                  .setTitle(`${player.queueRepeat ? `<a:yes:833101995723194437> **Enabled Queue Loop**`: `❌ **Disabled Queue Loop**`}`)
+                  .setTitle(`${player.queueRepeat ? `<a:tick:927612765382782987> **Enabled Queue Loop**`: `❌ **Disabled Queue Loop**`}`)
                   .setFooter(client.getFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                     dynamic: true
                   })))

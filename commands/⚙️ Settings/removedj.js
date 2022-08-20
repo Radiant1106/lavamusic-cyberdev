@@ -40,7 +40,7 @@ module.exports = {
         embeds: [new MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
-          .setTitle(`<a:no:997458422821818449> **This Role is not a DJ-Role!**`)
+          .setTitle(`<:denied:976057873878630400> **This Role is not a DJ-Role!**`)
         ]
       });
     //remove it from the Database
