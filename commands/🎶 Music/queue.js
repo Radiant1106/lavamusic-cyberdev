@@ -25,9 +25,12 @@ module.exports = {
     if (!tracks.length)
       return message.reply({
         embeds: [new MessageEmbed()
-          .setAuthor(client.getFooter(`Queue for ${message.guild.name}  -  [ ${player.queue.length} Tracks ]`, message.guild.iconURL({
+          // .setAuthor(client.getFooter(`Queue for ${message.guild.name}  -  [ ${player.queue.length} Tracks ]`, message.guild.iconURL({
+          //   dynamic: true
+          // })))
+          .setAuthor(`Queue for ${message.guild.name}  -  [ ${player.queue.length} Tracks ]`, message.guild.iconURL({
             dynamic: true
-          })))
+          }))
           .setColor(es.color).addField(eval(client.la[ls]["cmds"]["music"]["queue"]["variablex_1"]), eval(client.la[ls]["cmds"]["music"]["queue"]["variable1"]))
           .setDescription(eval(client.la[ls]["cmds"]["music"]["queue"]["variable2"]))
         ]
