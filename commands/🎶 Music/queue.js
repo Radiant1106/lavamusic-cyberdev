@@ -43,13 +43,12 @@ module.exports = {
       })
     //if not too big send queue in channel
     if (tracks.length < 15)
-      return message.reply({
-        embeds: [new MessageEmbed()
-          .setAuthor(client.getFooter(`Queue for ${message.guild.name}  -  [ ${player.queue.length} Tracks ]`, message.guild.iconURL({
-            dynamic: true
-          })))
+    return message.reply({embeds :[new MessageEmbed()
+      .setAuthor(`Queue for ${message.guild.name}  -  [ ${player.queue.length} Tracks ]`, message.guild.iconURL({
+        dynamic: true
+      }))
           .addField(`**\` 0. \` __CURRENT TRACK__**`, `**${player.queue.current.uri ? `[${player.queue.current.title.substr(0, 60).replace(/\[/igu, "\\[").replace(/\]/igu, "\\]")}](${player.queue.current.uri})`: player.queue.current.title}** - \`${player.queue.current.isStream ? `LIVE STREAM` : format(player.queue.current.duration).split(` | `)[0]}\`\n> *Requested by: __${player.queue.current.requester.tag}__*`)
-          .setColor(es.color).setDescription(tracks.map((track, index) => `**\` ${++index}. \`${trac.uri ? `[${track.title.substr(0, 60).replace(/\[/igu, "\\[").replace(/\]/igu, "\\]")}](${track.uri})` : track.title}** - \`${track.isStream ? `LIVE STREAM` : format(track.duration).split(` | `)[0]}\`\n> *Requested by: __${track.requester.tag}__*`).join(`\n`))
+          .setColor(es.color).setDescription(tracks.map((track, index) => `**\` ${++index}. \`${track.uri ? `[${track.title.substr(0, 60).replace(/\[/igu, "\\[").replace(/\]/igu, "\\]")}](${track.uri})` : track.title}** - \`${track.isStream ? `LIVE STREAM` : format(track.duration).split(` | `)[0]}\`\n> *Requested by: __${track.requester.tag}__*`).join(`\n`))
         ]
       }).then(msg => {
         setTimeout(() => {
